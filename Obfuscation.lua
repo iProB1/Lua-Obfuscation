@@ -17,10 +17,6 @@ local yourobfuscatedbytecode = [[
 
 print("Byte Obfuscation output:")
 print("loadstring("..encoded..")()")
-print("byte obfuscation Deobfuscated output:")
-print("loadstring("yourobfuscatedbytecode")()")
-print("if you want to decode it: ")
-print("print(loadstring("yourobfuscatedbytecode")())")
 
 print("Encode Function output:")
 print(encodeFunction(encodefunc))
