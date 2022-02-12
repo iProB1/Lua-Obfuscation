@@ -8,7 +8,12 @@ local encodefunc = [[
 print("Hello World!")
 ]]
 
-local encoded = thing:gsub(".", function(bb) return "\\" .. bb:byte() end) or byteob .. "\""
+local encoded = byteob:gsub(".", function(bb) return "\\" .. bb:byte() end) or byteob .. "\""
+
+local yourobfuscatedbytecode = [[
+"\112\114\105\110\116\40\34\72\101\108\108\111\32\87\111\114\108\100\33\34\41\10"
+]]
+
 
 print("Byte Obfuscation output:")
 print("loadstring("..encoded..")()")
