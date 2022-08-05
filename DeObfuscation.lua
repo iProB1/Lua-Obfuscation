@@ -6,4 +6,4 @@ local dump = string.dump(func,true)
 local file = io.open("output.lua", "wb")
 file:write(dump)
 file:close()
-os.exit()
+--os.exit() -- ur section for close ce i dont prefer
