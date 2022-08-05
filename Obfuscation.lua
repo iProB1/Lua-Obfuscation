@@ -7,6 +7,10 @@ print("Hello World!")
 local encodefunc = [[
 print("Hello World!")
 ]]
+-- QUANDALE DINGLE OBFUSCATION
+local Quandale = [[
+print("!!Hello World! ?! ?'!")
+]]
 
 local encoded = byteob:gsub(".", function(bb) return "\\" .. bb:byte() end) or byteob .. "\""
 
@@ -17,6 +21,19 @@ local yourobfuscatedbytecode = [[
 
 print("Byte Obfuscation output:")
 print("loadstring(\""..encoded.."\")()")
-
+print("\n\n")
 print("Encode Function output:")
 print(encodeFunction(load(encodefunc)))
+print("\n\n")
+
+print("( ONLY FOR CHEAT ENGINE ) QuanDaleDingle Obfuscation output add pull req if you want:")
+Quandale = encodeFunction(loadstring(Quandale))
+Quandale = string.reverse(Quandale)
+Quandale = string.gsub(Quandale,"!","QuanDaleDingle")
+Quandale = "function suspect(QDD) decodeFunction(string.reverse(string.gsub(QDD,'QuanDaleDingle','!')))() end suspect('"..Quandale.."')"
+Quandale = encodeFunction(loadstring(Quandale))
+Quandale = string.reverse(Quandale)
+Quandale = string.gsub(Quandale,"le", "Mourns")
+Quandale = "function suspect(QDD) decodeFunction(string.reverse(string.gsub(QDD,'Mourns','le')))() end suspect('"..Quandale.."')"
+print(QuanDale)
+print("\n\n")
